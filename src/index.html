@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <!-- build:css combined.min.css -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div id="root" style="width:98%; height:98%; margin:0 auto;">
+        <div style="width:98%; height:64px; margin:0 auto; margin-top:1%; margin-bottom:1%;" id="searchForm">
+        </div>
+        <div class="row row-fluid">
+            <div id="calendar" class="col-md-6">
+            </div>
+            <div id="todoist" class="col-md-6">
+            </div>
+        </div>
+    </div>
+    <!-- build:js combined.min.js -->
+    <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/react-dom.js"></script>
+    <script src="bower_components/axios/dist/axios.min.js"></script>
+    <script src="js/services/DateService.js"></script>
+    <script src="js/services/TodoistService.js"></script>
+    <script src="js/services/ComponentHelper.js"></script>
+    <script src="js/search/FormComponent.js"></script>
+    <script src="js/todoist/LoginComponent.js"></script>
+    <script src="js/todoist/ButtonComponent.js"></script>
+    <script src="js/todoist/RowComponent.js"></script>
+    <script src="js/todoist/HeaderComponent.js"></script>
+    <script src="js/todoist/TableComponent.js"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
